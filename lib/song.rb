@@ -37,6 +37,8 @@ class Song
 
 end
 
+the_middle = Song.create_by_name("The Middle")
+
 song = Song.create_by_name("The Middle")
 #binding.pry
 Song.all.include?(song)
