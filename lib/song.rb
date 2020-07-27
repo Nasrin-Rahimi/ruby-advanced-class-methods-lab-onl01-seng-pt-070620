@@ -11,15 +11,11 @@ class Song
   def save
     self.class.all << self
   end
-  
-  def self.create
-    song = self.new
-    @@all << song
-    song
-  end
 
 end
 
-
-song = Song.create
-Song.all.include?(song) #=> true
+s = Song.new 
+s.name = "The Ship Song"
+s.artist_name = "Nick Cave"
+binding.pry
+s.save
