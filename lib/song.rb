@@ -46,13 +46,12 @@ class Song
     self.all.sort_by{|song| song.name}
   end
   
-  def self.new_from_filename(file)
-    data = file.split(" - ")
+  def self.new_from_filename(song_mp3_format)
+    data = song_mp3_format.split(" - ")
     artist = data[0]
     name = data[1].delete_suffix(".mp3")
     song = self.new
     song.artist_name = artist
-    #binding.pry
     song.name = name
     song
   end
@@ -60,7 +59,7 @@ class Song
 end
 
 song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
- binding.pry
+ #binding.pry
 
 song_1 = Song.find_or_create_by_name("Blank Space")
 song_2 = Song.find_or_create_by_name("Alank Space")
