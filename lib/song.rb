@@ -52,11 +52,13 @@ class Song
     name = data[1].delete_suffix(".mp3")
     song = self.new
     song.artist_name = artist
-    binding.pry
     song.name = name
   end
 
 end
+
+song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
+ binding.pry
 
 song_1 = Song.find_or_create_by_name("Blank Space")
 song_2 = Song.find_or_create_by_name("Alank Space")
