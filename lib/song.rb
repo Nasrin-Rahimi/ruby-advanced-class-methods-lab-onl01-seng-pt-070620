@@ -52,7 +52,7 @@ class Song
     name = data[1].delete_suffix(".mp3")
     song = self.new
     song.artist_name = artist
-    binding.pry
+    #binding.pry
     song.name = name
   end
 
