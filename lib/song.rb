@@ -33,6 +33,12 @@ class Song
 
 end
 
+song = Song.create_by_name("The Middle")
+song
+
+Song.all.include?(song)
+#=> true
+
 song = Song.new_by_name("The Middle")
 song.name
 
