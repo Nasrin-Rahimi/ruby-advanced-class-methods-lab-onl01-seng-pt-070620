@@ -41,6 +41,8 @@ class Song
     end
     self.find_by_name(name)
   end
+  
+  def self.
 
 end
 
