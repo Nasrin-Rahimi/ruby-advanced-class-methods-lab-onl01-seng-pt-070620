@@ -46,7 +46,7 @@ end
 
 song_1 = Song.find_or_create_by_name("Blank Space")
 song_2 = Song.find_or_create_by_name("Blank Space")
-binding.pry
+#binding.pry
 
 the_middle = Song.create_by_name("The Middle")
 #binding.pry
