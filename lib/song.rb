@@ -72,32 +72,3 @@ class Song
   end
 
 end
-
-song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
- #binding.pry
-
-song_1 = Song.find_or_create_by_name("Blank Space")
-song_2 = Song.find_or_create_by_name("Alank Space")
-Song.alphabetical
-
-
-the_middle = Song.create_by_name("The Middle")
-#binding.pry
-Song.find_by_name("The Middle")
-
-song = Song.create_by_name("The Middle")
-#binding.pry
-Song.all.include?(song)
-
-
-song = Song.new_by_name("The Middle")
-song.name
-
-song = Song.create
-Song.all.include?(song)
-
-s = Song.new 
-s.name = "The Ship Song"
-s.artist_name = "Nick Cave"
-#binding.pry
-s.save
