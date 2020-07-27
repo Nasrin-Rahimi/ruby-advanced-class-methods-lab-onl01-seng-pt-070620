@@ -6,7 +6,7 @@ class Song
   
   def self.create
     song = self.new
-    binding.pry
+    
     self.all << song
   end
 
@@ -21,7 +21,7 @@ class Song
 end
 
 song = Song.create
-
+binding.pry
 Song.all.include?(song)
 
 s = Song.new 
