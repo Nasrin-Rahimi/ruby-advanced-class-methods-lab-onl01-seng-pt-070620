@@ -6,7 +6,6 @@ class Song
   
   def self.create
     song = self.new
-    
     self.all << song
   end
 
@@ -21,7 +20,6 @@ class Song
 end
 
 song = Song.create
-binding.pry
 Song.all.include?(song)
 
 s = Song.new 
