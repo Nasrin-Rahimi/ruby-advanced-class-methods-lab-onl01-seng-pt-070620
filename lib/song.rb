@@ -42,13 +42,15 @@ class Song
     self.find_by_name(name)
   end
   
-  def self.
+  def self.alphabetical
+    self.all.sort{|song| song.name}
+  end
 
 end
 
 song_1 = Song.find_or_create_by_name("Blank Space")
-song_2 = Song.find_or_create_by_name("Blank Space")
-#binding.pry
+song_2 = Song.find_or_create_by_name("Alank Space")
+binding.pry
 
 the_middle = Song.create_by_name("The Middle")
 #binding.pry
