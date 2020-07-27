@@ -19,6 +19,10 @@ class Song
 
 end
 
+song = Song.create
+binding.pry
+Song.all.include?(song)
+
 s = Song.new 
 s.name = "The Ship Song"
 s.artist_name = "Nick Cave"
