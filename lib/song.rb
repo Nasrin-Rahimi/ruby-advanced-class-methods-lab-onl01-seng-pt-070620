@@ -46,6 +46,7 @@ class Song
     binding.pry
     self.all.collect do |song|
       song.sort
+    end
   end
 
 end
