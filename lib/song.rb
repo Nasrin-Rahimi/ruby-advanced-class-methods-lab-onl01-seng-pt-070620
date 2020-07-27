@@ -38,7 +38,7 @@ class Song
 end
 
 the_middle = Song.create_by_name("The Middle")
-binding.pry
+#binding.pry
 Song.find_by_name("The Middle")
 
 song = Song.create_by_name("The Middle")
