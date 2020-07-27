@@ -27,7 +27,6 @@ class Song
 end
 
 song = Song.new_by_name("The Middle")
-binding.pry
 song.name
 
 song = Song.create
