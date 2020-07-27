@@ -21,7 +21,6 @@ class Song
 end
 
 song = Song.create
-binding.pry
 Song.all.include?(song)
 
 s = Song.new 
